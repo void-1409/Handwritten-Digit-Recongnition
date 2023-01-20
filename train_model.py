@@ -14,5 +14,5 @@ nmodel.add(tf.keras.layers.Dense(10, activation='softmax'))
 
 nmodel.compile(optimizer='adam', loss='sparse_categorical_crossentropy', metrics=['accuracy'])
 
-nmodel.fit(x_train, y_train, epochs=3)
+nmodel.fit(x_train, y_train, epochs=5)
 nmodel.save('trained.model')
